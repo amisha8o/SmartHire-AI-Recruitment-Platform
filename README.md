@@ -183,13 +183,14 @@ MongoDB              Gemini AI
     |                     |
   Candidate Data AI Analysis
           |
-   Recruiter Portal
+     Recruiter Portal
 
 
 
 ---
 
-# 📂 Project Structure
+##  📂 Project Structure
+
 SmartHire-AI-Recruitment-Platform
 
 │
@@ -319,5 +320,5 @@ npm run dev
 ## Clone Repository
 
 ```bash
-git clone https://github.com/amisha8o/SmartHire-AI-Recruitment-Platform.git
+git clone -https://github.com/amisha8o/SmartHire-AI-Recruitment-Platform
 
