@@ -259,32 +259,6 @@ Real-time recruiter chat
 <img width="1007" height="923" alt="image" src="https://github.com/user-attachments/assets/9ada33d2-9355-4de2-9412-72cdb5f6f622" />
 <img width="1103" height="832" alt="image" src="https://github.com/user-attachments/assets/239d066d-1981-45ad-9c74-7ad0af28ce08" />
 
-
-# ⚙️ Installation & Setup
-## Backend Setup
-cd backend
-
-npm install
-## Create .env file:
-MONGO_URI=your_mongodb_connection
-
-GEMINI_API_KEY=your_gemini_api_key
-
-JWT_SECRET=your_secret_key
-## Run backend:
-npm start
-## Frontend Setup
-cd frontend
-
-npm install
-
-npm run dev
-
-## Clone Repository
-
-```bash
-git clone https://github.com/amisha8o/SmartHire-AI-Recruitment-Platform.git
-
 ## 🎯 Project Highlights
 
 ⭐ Full Stack MERN Application
@@ -296,6 +270,7 @@ git clone https://github.com/amisha8o/SmartHire-AI-Recruitment-Platform.git
 ⭐ Resume Intelligence System
 
 ⭐ Candidate & Recruiter Management
+
 ### 👩‍💻 Author
 
 Amisha Kumari
@@ -321,7 +296,28 @@ https://linkedin.com/in/amisha-kumari-3b80aa2b1
 
 Give this repository a ⭐ and feel free to explore.
 
+# ⚙️ Installation & Setup
+## Backend Setup
+cd backend
 
+npm install
+## Create .env file:
+MONGO_URI=your_mongodb_connection
 
+GEMINI_API_KEY=your_gemini_api_key
 
+JWT_SECRET=your_secret_key
+## Run backend:
+npm start
+## Frontend Setup
+cd frontend
+
+npm install
+
+npm run dev
+
+## Clone Repository
+
+```bash
+git clone https://github.com/amisha8o/SmartHire-AI-Recruitment-Platform.git
 
