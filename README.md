@@ -320,5 +320,5 @@ npm run dev
 ## Clone Repository
 
 ```bash
-git clone -https://github.com/amisha8o/SmartHire-AI-Recruitment-Platform
+https://github.com/amisha8o/SmartHire-AI-Recruitment-Platform
 
