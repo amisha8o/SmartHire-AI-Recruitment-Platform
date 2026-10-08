@@ -41,8 +41,8 @@ mongoose
   .then(() => {
     console.log("MongoDB Connected ✅")
 
-    app.listen(5000, () => {
-      console.log("Server Started 🚀")
+    app.listen(process.env.PORT || 5000, () => {
+          console.log("Server Started 🚀")
     })
   })
   .catch((err) => {
