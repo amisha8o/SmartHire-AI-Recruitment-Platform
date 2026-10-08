@@ -164,9 +164,9 @@ form.append("name", "Amisha")
 
 form.append("email", "amisha@gmail.com")
 
-const res=
+const res =
 await fetch(
-"${API_URL}/api/upload",
+  `${API_URL}/api/upload`,
 {
 method:"POST",
 body:form
@@ -198,8 +198,7 @@ toast.success(data.message)
 try{
 
 const aiRes = await fetch(
-
-"${API_URL}/api/ai/resume-analysis",
+  `${API_URL}/api/ai/resume-analysis`,
 
 {
 
@@ -256,8 +255,8 @@ async function loadRecommendedJobs(userSkills) {
 
   try {
 
-    const res = await fetch(
-      "${API_URL}/api/recommend-jobs",
+     const res = await fetch(
+  `${API_URL}/api/recommend-jobs`,
       {
         method: "POST",
         headers: {
@@ -291,7 +290,7 @@ try{
 const email = localStorage.getItem("email")
 
 await fetch(
-"${API_URL}/api/save-job",
+  `${API_URL}/api/save-job`,
 {
 method:"POST",
 headers:{
