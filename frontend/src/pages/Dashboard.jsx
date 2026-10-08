@@ -6,6 +6,7 @@ import ATSReport from "../components/ATSReport"
 import CoverLetter from "../components/CoverLetter"
 import InterviewQuestions from "../components/InterviewQuestions"
 import { useState, useEffect } from "react"
+import { API_URL } from "../api"
 
 import Sidebar from "../components/Sidebar"
 import Navbar from "../components/Navbar"
@@ -64,7 +65,7 @@ async function loadJobs(){
 try{
 
 const res = await fetch(
-"http://localhost:5000/api/jobs"
+`${API_URL}/api/jobs`
 )
 
 const data = await res.json()
@@ -95,7 +96,7 @@ try{
 const email = localStorage.getItem("email")
 
 const res = await fetch(
-`http://localhost:5000/api/saved-jobs/${email}`
+ `${API_URL}/api/saved-jobs/${email}`
 )
 
 const data = await res.json()
@@ -128,7 +129,7 @@ try{
 
 const res =
 await fetch(
-"http://localhost:5000/api/resumes"
+"${API_URL}/api/resumes"
 )
 
 const data =
@@ -165,7 +166,7 @@ form.append("email", "amisha@gmail.com")
 
 const res=
 await fetch(
-"http://localhost:5000/api/upload",
+"${API_URL}/api/upload",
 {
 method:"POST",
 body:form
@@ -198,7 +199,7 @@ try{
 
 const aiRes = await fetch(
 
-"http://localhost:5000/api/ai/resume-analysis",
+"${API_URL}/api/ai/resume-analysis",
 
 {
 
@@ -256,7 +257,7 @@ async function loadRecommendedJobs(userSkills) {
   try {
 
     const res = await fetch(
-      "http://localhost:5000/api/recommend-jobs",
+      "${API_URL}/api/recommend-jobs",
       {
         method: "POST",
         headers: {
@@ -290,7 +291,7 @@ try{
 const email = localStorage.getItem("email")
 
 await fetch(
-"http://localhost:5000/api/save-job",
+"${API_URL}/api/save-job",
 {
 method:"POST",
 headers:{

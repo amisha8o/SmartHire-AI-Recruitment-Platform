@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { API_URL } from "../api"
 import axios from "axios"
 
 function RecruiterLogin(){
@@ -15,8 +16,8 @@ async function handleSubmit(){
 try{
 
 const url=isLogin
-? "http://localhost:5000/api/recruiter/login"
-: "http://localhost:5000/api/recruiter/register"
+? `${API_URL}/api/recruiter/login`
+: `${API_URL}/api/recruiter/register`
 
 const body=isLogin
 ? {email,password}

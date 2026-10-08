@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { API_URL } from "../api"
 
 function MockInterview({ skills }) {
 
@@ -12,7 +13,7 @@ setLoading(true)
 try{
 
 const res = await fetch(
-"http://localhost:5000/api/ai/mock-interview",
+`${API_URL}/api/ai/mock-interview`,
 {
 method:"POST",
 headers:{

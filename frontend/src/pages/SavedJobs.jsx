@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { API_URL } from "../api"
 
 function SavedJobs(){
 
@@ -17,7 +18,7 @@ try{
 const email = localStorage.getItem("email")
 
 const res = await fetch(
-`http://localhost:5000/api/saved-jobs/${email}`
+ `${API_URL}/api/saved-jobs/${email}`
 )
 
 const data = await res.json()

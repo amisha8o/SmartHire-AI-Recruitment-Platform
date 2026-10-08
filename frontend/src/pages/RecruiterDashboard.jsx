@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { API_URL } from "../api"
 import { toast } from "react-toastify"
 function RecruiterDashboard() {
 	async function postJob(){
@@ -21,7 +22,7 @@ return
 try{
 
 const res = await fetch(
-"http://localhost:5000/api/jobs",
+"${API_URL}/api/jobs",
 {
 method:"POST",
 headers:{
@@ -74,7 +75,7 @@ async function deleteJob(id){
 try{
 
 const res = await fetch(
-`http://localhost:5000/api/jobs/${id}`,
+`${API_URL}/api/jobs/${id}`,
 {
 method:"DELETE"
 }
@@ -99,7 +100,7 @@ try{
 
 const res = await fetch(
 
-`http://localhost:5000/api/candidates/${id}`,
+`${API_URL}/api/candidates/${id}`,
 
 {
 method:"PUT",
@@ -170,7 +171,7 @@ async function loadJobs(){
 try{
 
 const res=await fetch(
-"http://localhost:5000/api/jobs"
+  `${API_URL}/api/jobs`
 )
 
 const data=await res.json()
@@ -197,7 +198,7 @@ async function loadCandidates() {
 
   try {
 
-    const res = await fetch("http://localhost:5000/api/candidates");
+    const res = await fetch("${API_URL}/api/candidates");
 
     const data = await res.json();
 
@@ -716,7 +717,7 @@ selectedCandidate.resume && (
 <button
 onClick={() => {
 
-const url = `http://localhost:5000/uploads/${selectedCandidate.resume}`
+const url = `${API_URL}/uploads/${selectedCandidate.resume}`
 
 console.log(url)
 

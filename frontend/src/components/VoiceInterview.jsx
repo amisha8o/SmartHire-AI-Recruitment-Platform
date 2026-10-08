@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react"
+import { API_URL } from "../api"
 
 function VoiceInterview() {
   
@@ -95,7 +96,7 @@ async function getFeedback(){
 
     const res = await fetch(
 
-      "http://localhost:5000/api/ai/voice-feedback",
+      `${API_URL}/api/ai/voice-feedback`,
 
       {
 

@@ -1,3 +1,4 @@
+import { API_URL } from "./api"
 import SavedJobs from "./pages/SavedJobs"
 import RecruiterLogin from "./pages/RecruiterLogin"
 import { useState } from "react"
@@ -17,10 +18,11 @@ function App() {
   const handleSubmit = async () => {
 
     try {
-
       const url = isLogin
-        ? "http://localhost:5000/api/login"
-        : "http://localhost:5000/api/register"
+  ? `${API_URL}/api/login`
+  : `${API_URL}/api/register`
+
+         
 
       const body = isLogin
         ? { email, password }
